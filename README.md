@@ -1,5 +1,3 @@
-# UDACITY_Front-end_Nanodegree_PortfolioSite
+This is a simple website to show projects I developed outside of professional work.
 
-This is first project of Udacity Front-end developer Nanodegree.
-
-Simple website to show future projects will be developed with growing experience.
+It contains projects developed throughout online courses or independently by myself to sharpen skills in JavaScript and web development.
