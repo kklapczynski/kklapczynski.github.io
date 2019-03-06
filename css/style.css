@@ -59,6 +59,7 @@ img, embed, object, video {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .main-project-item {
@@ -69,15 +70,20 @@ img, embed, object, video {
     margin: 5px auto 5px 10%;
 }
 
-.main-project-item a {
+.text-link {
     display: block;
     text-decoration: none;
     color: black;
     margin: 5px auto 15px 10%;
 }
 
-.text-link:hover{
+.link:hover {
     cursor: pointer;
+}
+
+.img-link {
+    margin: 0;
+    padding: 0;
 }
 
 .credits {
@@ -121,12 +127,12 @@ img, embed, object, video {
 }
 
 @media screen and (min-width: 600px) {
-    
+
     .header-logo {
         margin: auto 20px;
         width: 120px;
     }
-    
+
     .header-spacer {
         width: 1%;
     }
@@ -135,10 +141,6 @@ img, embed, object, video {
         width: 33.333%;
         flex: 1 1 150px;
         margin: 10px;
-    }
-
-    .main-project-item h3, .main-project-item a  {
-        margin: 5px auto 5px 1%;
     }
 }
 
