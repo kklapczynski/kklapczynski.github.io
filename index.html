@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css"/>
-    <!-- <script src="main.js"></script> -->
 </head>
 <body>
     <header>
@@ -18,61 +17,66 @@
             <div class="header-spacer"></div>
             <div class="header-title">
                 <h2>Krzysztof Klapczyński</h2>
-                <h4>Javascript developer</h4>
             </div>
         </div>
     </header>
     <main>
         <section class="main-intro">
-            <h4>Welcome. <br> I am a Javascript enthusiast<br> and webapp builder.<br> See some of my work below. </h4>
+            <p>Welcome.<br> I have experience in programming business logic using JS and SQL in Warehouse Managment Systems.<br>Turning now to web development I do projects outside my work.</p>
         </section>
         <section class="main-projects">
-            <div class="main-project-item">
+            <article class="main-project-item">
+                <a target="_blank" rel="noopener noreferrer" href="https://kklapczynski.github.io/angular-coursera-conFusion/" class="link img-link">
+                    <img src="./img/conFusion.jpg" alt="screenshot of angular conFusion webapp in the browser">
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/kklapczynski/angular-coursera-conFusion" class="link text-link">
+                    <h3>conFusion</h3>
+                </a>
+                <div class="project-description">
+                    <p>ANGULAR web app developed during COURSERA<em>Front-End JavaScript Frameworks: Angular</em> course. Features used: directives, components, services, Observables with RxJS, Angular Material, Angular Flex-Layout, animations, client-server communication through the HTTP client and the use of REST API. </p>
+                </div>
+            </article>
+
+            <article class="main-project-item">
                 <a target="_blank" rel="noopener noreferrer" href="https://kklapczynski.github.io/memory-game/" class="link img-link">
                     <img src="./img/memory-game.jpg" alt="screenshot of memory game in the browser">
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/kklapczynski/memory-game" class="link text-link">
                     <h3>Memory game</h3>
                 </a>
-            </div>
-            <div class="main-project-item">
+                <div class="project-description">
+                    <p>Simple project built during <em>UDACITY Front-End Web Developer Nanodegree</em> course from the starter code. HTML, CSS were modified and JavaScript was practically all coded for this assignment.</p>
+                </div>
+            </article>
+            <article class="main-project-item">
                 <a target="_blank" rel="noopener noreferrer" href="https://kklapczynski.github.io/arcade-game/" class="link img-link">
-                    <!--TODO: change to screenshot of app  -->
-                    <img src="./img/outdoor-coding-unsplash_reduced.jpg" alt="outdoor coding">
+                    <img src="./img/arcade-game.jpg" alt="screenshot of arcade game in the browser">
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/kklapczynski/arcade-game" class="link text-link">
                     <h3>Arcade game</h3>
                 </a>
-            </div>
-            <div class="main-project-item">
-                <!--TODO: change to screenshot of app  -->
-                <img src="./img/rawpixel-678089-unsplash_reduced.jpg" alt="3 people with laptops by the desk">
+                <div class="project-description">
+                    <p>Another <em>UDACITY</em> course project. OOP, ES6, Webpack and Babel were used to add characters to this game. Based on provided visual assets and a game loop engine.</p>
+                </div>
+            </article>
+            <article class="main-project-item">
+                <a target="_blank" rel="noopener noreferrer" href="https://kklapczynski.github.io/restaurant-reviews/" class="link img-link">
+                    <img src="./img/restaurant-review.jpg" alt="screenshot of restaurant review webapp in the browser">
+                </a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/kklapczynski/restaurant-reviews" class="link text-link">
                     <h3>Restaurant reviews</h3>
                 </a>
-            </div>
+                <div class="project-description">
+                    <p><em>UDACITY</em> course project. Static design that lacks accessibility was converted to a mobile-ready web application. Cache API and a ServiceWorker were used to cache the data for the website so that any page (including images) that has been visited is accessible offline.</p>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
         <hr>
         <div class="footer-container">
             <div class="footer-content">
-                <span class="credits-thanks">Photos thanks to:  </span>
-                <a  class="credits"
-                    href="https://unsplash.com/@steve3p_0?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Download free do whatever you want high-resolution photos from Steve Halama">
-                    <span class="credits-span">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="credits-svg"
-                            viewBox="0 0 32 32">
-                            <title>unsplash-logo</title>
-                            <path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path>
-                        </svg>
-                    </span>
-                    <span class="credits-span">Steve Halama</span>
-                </a>
+                <span class="credits-thanks">Photo thanks to:  </span>
                 <a class="credits"
                     target="_blank"
                     rel="noopener noreferrer"

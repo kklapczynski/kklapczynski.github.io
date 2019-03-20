@@ -7,8 +7,8 @@ body, html {
 
 body {
     font-family: Lato, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height:1.2em;  /*spacing between lines*/
+    font-size: 14px;
+    line-height:1.2em;
 }
 
 /* to prevent scrolling on images, videos and other in main css: */
@@ -20,6 +20,7 @@ img, embed, object, video {
     display: flex;
     flex-wrap: nowrap;
     margin: 10px;
+    font-size: larger;
 }
 
 .header-logo {
@@ -34,56 +35,75 @@ img, embed, object, video {
     margin: auto;
     width: 70%;
     text-align: center;
+    line-height:1.5em;
 }
 
 .main-intro {
     width: 100%;
-    height: 160px;
-    background-image:url('../img/background-rawpixel-558599-unsplash.jpg');
+    height: 200px;
+    background-image:url('../img/background.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:right;
     position: relative;
 }
 
-.main-intro h4 {
-    margin-top: 0;
-    width: 50%;
+.main-intro p {
+    width: 65%;
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
-    margin-left: 10%;
+    margin: 0 0 0 15px;
+    line-height: 1.5em;
 }
 
 .main-projects {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: stretch;
+    background-color: #f4f8fb;
+    justify-content: space-around;
 }
 
 .main-project-item {
-    width: 100%;
+    -webkit-box-shadow: 8px 14px 38px rgba(39,44,49,0.2);
+    -moz-box-shadow: 8px 14px 38px rgba(39,44,49,0.2);
+    box-shadow: 8px 14px 38px rgba(39,44,49,0.2);
+    flex: 1 1 250px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 800px;
 }
 
-.main-project-item h3 {
-    margin: 5px auto 5px 10%;
+.project-description {
+    margin: 0 10px 0 15px;
+    line-height: 1.5em;
 }
 
-.text-link {
-    display: block;
-    text-decoration: none;
-    color: black;
-    margin: 5px auto 15px 10%;
+.project-description h3 {
+    font-size: larger;
+}
+.link {
+    margin: 0;
+    padding: 0;
 }
 
 .link:hover {
     cursor: pointer;
 }
 
-.img-link {
+.text-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 5px auto 15px 15px;
+}
+
+.img-link img {
     margin: 0;
     padding: 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .credits {
@@ -125,6 +145,11 @@ img, embed, object, video {
 .footer-content {
     width: 100%;
 }
+@media screen and (min-width: 400px) {
+    .main-intro p {
+        font-size: larger;
+    }
+}
 
 @media screen and (min-width: 600px) {
 
@@ -138,16 +163,19 @@ img, embed, object, video {
     }
 
     .main-project-item {
-        width: 33.333%;
-        flex: 1 1 150px;
+        flex: 1 1 230px;
         margin: 10px;
     }
 }
 
 @media screen and (min-width: 800px) {
     body {
-        font-size: 20px;
+        font-size: 16px;
         width: 800px;
         margin: auto auto;
+    }
+
+    .main-project-item {
+        margin: 15px;
     }
 }
